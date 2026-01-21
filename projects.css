@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+.Header{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;  
+    z-index: 1;  
+}
+.hr{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 80%;
+}
+.Header-mid{
+   display: flex;
+   justify-content: space-between;
+   width: 25%;
+   text-decoration: none;
+   margin-left: -100px;
+}
+.Header-left{
+    margin-left: 25px;
+    font-size: 25px;
+    color: white;   
+}
+.Header-right{
+    margin-right: 25px;
+}
+.Home,.Projects,.About,.Skills{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.Home:hover,.Projects:hover,.About:hover,.Skills:hover{
+    color:rgb(3, 108, 255);
+}
+.body{
+    height: 80%;
+    margin-top: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.My_Works{
+    color: #007BFF;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 75px;
+}
+
+.My_Works::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #007BFF;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+.my_Projects{
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.RPS img,.Todo img,.youTube_Clone img,.Registration_Form img{
+    height: 70%;
+    width: 70%;
+    border: none;
+    border-radius: 1%;
+    padding: 5px;
+    z-index: -1;
+}
+.RPS p,.Todo p,.youTube_Clone p,.Registration_Form p{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(231, 231, 12);
+    font-size: 20px;
+    margin-right: 150px;
+    z-index: 2;
+}
+.RPS a,.Todo a{
+    text-decoration: none;
+}
+.Todo p{
+    color: darkgreen;
+}
+.youTube_Clone p{
+    color: #FF0000;
+}
+.Registration_Form p{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+   -webkit-background-clip: text;
+    background-clip: none;
+   -webkit-text-fill-color: transparent;
+}
+
+.RPS img:hover ,.Todo img:hover,.youTube_Clone img:hover,.Registration_Form img:hover{
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.images{
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 100px;
+      justify-content: space-evenly;
+      row-gap: 80px;
+      object-fit: cover;
+ }
+.images img {
+      width: 300px;
+      height: 300px;
+ }
+
+ .footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+a{
+    text-decoration: none;
+}
+.personal_details{
+    color: white;
+    position: relative;
+    bottom: 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+a img{
+    height: 30px;
+    width: 30px;
+    margin-left: 12px;
+    align-items: center;
+}
+
+.rights{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 1px ;
+    margin-right: 42px;
+    color: white;
+}

@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+ }
+.Header{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;  
+    z-index: 1;  
+}
+.hr{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 80%;
+}
+.Header-mid{
+   display: flex;
+   justify-content: space-between;
+   width: 25%;
+   text-decoration: none;
+   margin-left: -100px;
+}
+.Header-left{
+    margin-left: 25px;
+    font-size: 25px;
+    color: white;   
+}
+.Header-right{
+    margin-right: 25px;
+}
+.Home,.Projects,.About,.Skills{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.Home:hover,.Projects:hover,.About:hover,.Skills:hover{
+    color:rgb(3, 108, 255);
+}
+.body{
+    height: 80%;
+    margin-top: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+     color: #007BFF;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 75px;
+}
+
+.heading::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #007BFF;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+nav{
+    border: 5px solid black;
+    border-radius: 20px;
+    box-shadow: 20px 20px 2px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+}
+nav:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.images{
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 100px;
+      justify-content: space-evenly;
+      row-gap: 80px;
+      object-fit: cover;
+ }
+.images img {
+      width: 300px;
+      height: 300px;
+ }
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+a{
+    text-decoration: none;
+}
+.personal_details{
+    color: white;
+    position: relative;
+    bottom: 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+a img{
+    height: 30px;
+    width: 30px;
+    margin-left: 12px;
+    align-items: center;
+}
+.rights{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 1px ;
+    margin-right: 42px;
+    color: white;
+}
